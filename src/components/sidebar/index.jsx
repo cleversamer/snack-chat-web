@@ -15,6 +15,8 @@ const Sidebar = () => {
 };
 
 const Container = styled.aside`
+  position: sticky;
+  top: 0;
   width: 22vw;
   max-width: 235px;
   display: flex;
