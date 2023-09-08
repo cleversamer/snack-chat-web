@@ -1,6 +1,6 @@
-# Project Title 🚀
+# Snack Chat App 🚀
 
-Simple overview of use/purpose.
+A simple room chatting web app.
 
 ## 🔴 Live Demo
 
@@ -8,7 +8,7 @@ Not live yet...
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+A simple room chatting web app that allows people to create or join rooms and chat inside it with other people.
 
 ## Getting Started
 
@@ -17,6 +17,7 @@ An in-depth paragraph about your project and overview of use.
 - React
 - React DOM
 - React Router DOM
+- React Scripts
 - Styled Components
 
 ### Installing
@@ -33,7 +34,7 @@ An in-depth paragraph about your project and overview of use.
 
 ## Authors
 
-- [Samer A.](https://cleversamer.web.app/)
+- [Samer A.](https://cleversamer.tech/)
 
 ## Version History
 

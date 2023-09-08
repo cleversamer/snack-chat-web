@@ -4,6 +4,7 @@
     "name": "Samer A.",
     "website": "https://cleversamer.tech"
   },
+  "description": "A simple room chatting web app.",
   "version": "1.0",
   "private": true,
   "dependencies": {
