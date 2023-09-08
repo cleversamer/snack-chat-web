@@ -20,3 +20,14 @@ a {
 ul {
   list-style: none;
 }
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: none;
+}
