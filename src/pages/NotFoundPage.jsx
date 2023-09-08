@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import { styled } from "styled-components";
 import { ROUTES } from "client";
 
-const NotFound = () => {
+const NotFoundPage = () => {
   return (
     <Container>
       <Heading>The requested URL was not found on this server.</Heading>
@@ -48,4 +48,4 @@ const Heading = styled.h1`
   }
 `;
 
-export default NotFound;
+export default NotFoundPage;
