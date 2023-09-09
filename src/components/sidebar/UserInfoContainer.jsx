@@ -1,10 +1,13 @@
+import useAuth from "context/useAuth";
 import { styled } from "styled-components";
 
 const UserInfoContainer = () => {
+  const { user } = useAuth();
+
   return (
     <Container>
-      <UserPicture src="/assets/images/avatar.jpg" alt="User picture" />
-      <UserName>Samer Alsaadawi</UserName>
+      <UserPicture src={user.photoURL} alt={user.displayName} />
+      <UserName>{user.displayName}</UserName>
     </Container>
   );
 };
