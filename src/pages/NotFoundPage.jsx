@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 import { ROUTES } from "client";
+import useAuth from "context/useAuth";
 
 const NotFoundPage = () => {
+  const { user } = useAuth();
+
   return (
     <Container>
       <Heading>The requested URL was not found on this server.</Heading>
-      <Link to={ROUTES.CLIENT.HOME}>Back to the home page</Link>
+      <Link to={user ? ROUTES.CLIENT.HOME : ROUTES.CLIENT.LOGIN}>
+        Back to the home page
+      </Link>
     </Container>
   );
 };

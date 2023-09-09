@@ -1,10 +1,27 @@
 import { styled } from "styled-components";
 import { FcGoogle } from "react-icons/fc";
+import { signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import { auth } from "../firebase";
+import useAuth from "context/useAuth";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "client";
 
 const LoginPage = () => {
+  const navigate = useNavigate();
+  const { login } = useAuth();
+
+  const handleLogin = () => {
+    signInWithPopup(auth, new GoogleAuthProvider())
+      .then((result) => {
+        login(result.user);
+        navigate(ROUTES.CLIENT.HOME);
+      })
+      .catch((error) => console.log("ERR", error));
+  };
+
   return (
     <Container>
-      <LoginButton>
+      <LoginButton onClick={handleLogin}>
         <FcGoogle /> Login with Google
       </LoginButton>
     </Container>
